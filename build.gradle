@@ -1,7 +1,7 @@
 ext {
   adpCoreVersion = project.hasProperty('adpCoreVersion') ? project.getProperty('adpCoreVersion') : '3.4-SNAPSHOT'
   releaseVersion = project.hasProperty('releaseVersion') ? project.getProperty('releaseVersion') : '3.4-SNAPSHOT'
-  mavenPublishUrl = project.hasProperty('mavenPublishUrl') ? project.getProperty('mavenPublishUrl') : 'https://development.adaptris.net/nexus/content/repositories/snapshots'
+  mavenPublishUrl = project.hasProperty('mavenPublishUrl') ? project.getProperty('mavenPublishUrl') : 'https://nexus.adaptris.net/nexus/content/repositories/snapshots'
   componentName='Interlok Template'
   slf4jVersion = '1.7.25'
 }
@@ -26,16 +26,16 @@ def versionDir = "$buildDir/version"
 
 // In this section you declare where to find the dependencies of your project
 repositories {
-  maven { url "https://development.adaptris.net/nexus/content/groups/public" }
+  maven { url "https://nexus.adaptris.net/nexus/content/groups/public" }
   maven {
     credentials {
       username repoUsername
       password repoPassword
     }
-    url "https://development.adaptris.net/nexus/content/groups/private"
+    url "https://nexus.adaptris.net/nexus/content/groups/private"
   }
-  maven { url "https://development.adaptris.net/nexus/content/repositories/snapshots" }
-  maven { url "https://development.adaptris.net/nexus/content/repositories/releases" }
+  maven { url "https://nexus.adaptris.net/nexus/content/repositories/snapshots" }
+  maven { url "https://nexus.adaptris.net/nexus/content/repositories/releases" }
 }
 
 
