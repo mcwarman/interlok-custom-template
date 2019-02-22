@@ -3,7 +3,7 @@ ext {
   releaseVersion = project.hasProperty('releaseVersion') ? project.getProperty('releaseVersion') : '3.4-SNAPSHOT'
   mavenPublishUrl = project.hasProperty('mavenPublishUrl') ? project.getProperty('mavenPublishUrl') : 'https://nexus.adaptris.net/nexus/content/repositories/snapshots'
   componentName='Interlok Template'
-  slf4jVersion = '1.7.25'
+  slf4jVersion = '1.7.26'
 }
 
 if (JavaVersion.current().isJava8Compatible()) {
