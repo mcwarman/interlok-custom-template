@@ -49,7 +49,7 @@ dependencies {
   compile ("com.adaptris:adp-core:$adpCoreVersion") { changing= true}
   compile ("org.slf4j:slf4j-api:$slf4jVersion")
 
-  testCompile ('junit:junit:4.12')
+  testCompile ('junit:junit:4.13')
   testCompile ("com.adaptris:adp-stubs:$adpCoreVersion") { changing= true}
 
   javadoc("com.adaptris:adp-core-apt:$adpCoreVersion") { changing= true}
